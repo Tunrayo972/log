@@ -42,7 +42,7 @@ function send(event){
         showToast("Invalid email")
     }else if(!Copass.test(pass)){
         // alert("Your pass is not strong enough")
-        showToast("Password must be atleast * characters long and include at least one uppercase letter,one lowercase leter,one number and one special character")
+        showToast("Password must be atleast 8 characters long and include at least one uppercase letter,one lowercase leter,one number and one special character")
     }else if(pass !== cpass){
         // alert("confirm your password")
         showToast("password and Confirm Password do not match")
