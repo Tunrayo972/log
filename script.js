@@ -68,6 +68,7 @@ function send(event){
         console.log(details);
         if(typeof showToast === "function"){
             showToast("Account created successfully", "#4BB543", "#fff", "top");
+            setTimeout(() => { window.location.href = 'signin.html'; }, 500);
         }else{
             alert("Account created successfully");
         }
