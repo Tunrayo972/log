@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signin.css">
+       <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body class="center-body">
+    <!-- From Uiverse.io by Rudra-M1 --> 
+<div class="form-container">
+  <p class="title">Login</p>
+  <form class="form" onsubmit="signin(event)">
+    <div class="input-group">
+      <label for="username">Email</label>
+      <input type="text" name="email" id="email" placeholder="" />
+    </div>
+    <div class="input-group">
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" placeholder="" />
+      <!-- <div class="forgot">
+        <a rel="noopener noreferrer" href="#">Forgot Password ?</a>
+      </div> -->
+    </div>
+    <div style="margin-bottom:10px;">
+        <input type="checkbox" id="showPass"  onclick="togglePassword()">
+        <label for="showPass" class="show">Show Password</label>
+    </div>
+    <br>
+    <button class="sign" type="submit">Sign in</button>
+  </form>
+  <p class="signup">
+    Don't have an account?
+    <a rel="noopener noreferrer" href="index.html" class="">Sign up</a>
+  </p>
+</div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="signin.js"></script>
+
+</body>
+</html>
